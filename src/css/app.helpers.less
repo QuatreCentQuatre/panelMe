@@ -1,0 +1,19 @@
+.opacity(@alpha) {
+	filter: ~"alpha(opacity=@{alpha})";
+	@alphaDivided: @alpha / 100;
+	-khtml-opacity:@alphaDivided;
+	-moz-opacity:@alphaDivided;
+	opacity:@alphaDivided;
+}
+
+.clearfix() {
+	*zoom: 1;
+	&:before, &:after {
+		display: table;
+		content: " ";
+		line-height: 0;
+	}
+	&:after {
+		clear: both;
+	}
+}

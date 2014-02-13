@@ -1,0 +1,80 @@
+#m-menu-panel {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 0;
+}
+#m-menu-panel .menu-panel-ctn {
+  position: relative;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  height: 100%;
+  background-color: #3e424b;
+}
+#m-menu-panel .menu-panel-ctn ul {
+  position: absolute;
+  top: 40px;
+  width: 100%;
+  bottom: 0;
+  overflow-y: auto;
+  margin: 0px;
+}
+#m-menu-panel .menu-panel-ctn ul li {
+  margin: 0px;
+  line-height: 35px;
+  border-bottom: 1px solid #bcb9b9;
+}
+#m-menu-panel .menu-panel-ctn ul li:last-child {
+  border-bottom: none;
+}
+#m-menu-panel .menu-panel-ctn ul li a {
+  display: block;
+  padding: 0 20px;
+  color: #9caeb7;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
+  font-size: 16px;
+  text-decoration: none;
+}
+#m-menu-panel .menu-panel-ctn ul li a.active,
+#m-menu-panel .menu-panel-ctn ul li a:hover {
+  text-decoration: none;
+  text-shadow: none;
+}
+#m-menu-panel .menu-panel-ctn ul li a.active {
+  background-color: #FFFFFF;
+}
+#m-menu-panel .menu-panel-ctn #panel-head {
+  min-height: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #808080;
+}
+#m-menu-panel .menu-panel-ctn #panel-head .main-nav-toggler {
+  position: absolute;
+  padding: 11px;
+  height: 18px;
+  top: 0;
+  left: 8px;
+}
+#m-menu-panel .menu-panel-ctn #panel-head .main-nav-toggler .toggler {
+  width: 18px;
+  height: 18px;
+  background: url('../../src/img/nav-toggler.png') no-repeat;
+  background-size: 100% auto;
+}
+#m-menu-panel .menu-panel-ctn #panel-head p {
+  padding-left: 30px;
+  margin: 0px;
+  line-height: 40px;
+  color: white;
+}
+#m-menu-panel .close-panel {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 100%;
+  background-color: transparent;
+  opacity: 0.01;
+}

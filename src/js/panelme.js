@@ -354,5 +354,5 @@
     if(!window.Me) {
         window.Me = {};
     }
-    Me.Panel = PanelMe;
+    Me.panel = PanelMe;
 }(jQuery, window, document));

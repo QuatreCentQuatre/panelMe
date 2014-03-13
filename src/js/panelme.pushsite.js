@@ -105,8 +105,8 @@
         return "[PanelMe.PushSite]";
     };
 
-    if(window.Me && window.Me.Panel) {
-        Me.Panel.SitePush = PanelMeSitePush;
+    if(window.Me && window.Me.panel) {
+        Me.panel.push = PanelMeSitePush;
     }
 
 }(jQuery, window, document));

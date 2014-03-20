@@ -3,7 +3,7 @@
     var PanelMeSitePush = function($el, $toggler, options){
         this.__construct($el, $toggler, options);
     };
-    var proto = PanelMeSitePush.prototype = new Me.Panel();
+    var proto = PanelMeSitePush.prototype = new Me.panel();
 
     proto.$siteCtn 			= null;
 

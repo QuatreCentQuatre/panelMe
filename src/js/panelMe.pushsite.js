@@ -14,6 +14,7 @@
 
             this.$el.css({display:'block'});
             this.$siteCtn.css({position:'fixed', width:'100%'});
+            this.$el.find('.menu-panel-ctn').css('overflow','hidden');
         },
         onOpen : function() {
             if (this.options.css3Enabled && this.transform_enabled) {
@@ -37,6 +38,7 @@
             this.$el.css({zIndex:''});
         },
         onClose : function() {
+            this.$el.find('.menu-panel-ctn').css('overflow','hidden');
             if (this.options.css3Enabled && this.transform_enabled) {
                 this.$siteCtn.addClass('panel-animation-close');
                 scope = this;
